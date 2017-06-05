@@ -1,0 +1,28 @@
+/** 头部 **/
+.lmyim-header{background-color: #23262E;}
+.lmyim-logo {position: absolute;line-height: 57px;width: 185px;}
+.lmyim-nav{position: absolute;top: 0;left: 200px;background: 0;}
+.lmyim-web-info{position: absolute;top: 0;right: 0;background: 0;}
+.logo{font-size: 26px;color: white;}
+
+/** tab页 **/
+.lmyim-tab-card{margin: 0;}
+.lmyim-tab-button{position: absolute;float: left;right: 20px;line-height: 40px;}
+.lmyim-tab-title{float: left;width: 100%;}
+
+/** body页 **/
+.layui-show iframe{width: 100%;height: 100%;min-height: 800px;border: none; outline: none;}
+
+
+
+
+
+
+/** 登录页 ***/
+.main {position:absolute;top:50%;left: 50%;margin-left: -175px;margin-top: -300px; width: 350px;}
+.lmyim-tab-title-lr{border-bottom: 0px solid #e2e2e2;}
+.lmyim-tab-title-lr .layui-this,.lmyim-tab-title-lr li a{color: #FFFFFF !important;}
+.lmyim-for-pwd{color: #FFFFFF}
+
+/** 主体 **/
+.lmy-body {margin-top: 10px;}
