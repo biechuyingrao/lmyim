@@ -7,7 +7,9 @@ class Index extends Base
     public function index()
     {
     	$homeUrl = url('admin/index/home');
+        $userUrl = url('admin/user/index');
     	$this->assign('homeUrl',$homeUrl);
+        $this->assign('userUrl',$userUrl);
     	return $this->fetch();
     }
 
