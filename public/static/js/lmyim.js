@@ -53,7 +53,7 @@ layui.use(['element','layer'],function() {
     }
 });
 layui.use('form', function(){
-  var form = layui.form();
+  var form = layui.form(),$ = layui.jquery;
   //return false;
   //监听提交
   form.on('submit(*)', function(data){
@@ -65,5 +65,13 @@ layui.use('form', function(){
     //     console.log(re);
     // });
     // return false;
+  });
+  //全选
+  form.on('checkbox(allChoose)', function(data){
+    var child = $(data.elem).parents('table').find('tbody input[type="checkbox"]');
+    child.each(function(index, item){
+      item.checked = data.elem.checked;
+    });
+    form.render('checkbox');
   });
 });
