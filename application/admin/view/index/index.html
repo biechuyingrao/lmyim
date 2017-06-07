@@ -31,7 +31,7 @@
             <!-- 头部右侧操作 -->
             <ul class="layui-nav lmyim-web-info">
                 <li class="layui-nav-item">
-                    <a href="javascript:;">进入前台</a>
+                    <a href="javascript:;" data-url="{$lmyimUrl}">进入前台</a>
                 </li>
                 <li class="layui-nav-item">
                     <a href="javascript:;">{$Think.session.user_auth.username}<span class="layui-nav-more"></span></a>
@@ -43,7 +43,7 @@
                             <a href="javascript:;">修改密码</a>
                         </dd>
                         <dd>
-                            <a href="javascript:;">退出登录</a>
+                            <a href="javascript:;" data-url="{$logoutUrl}">退出登录</a>
                         </dd>
                     </dl>
                 </li>
@@ -126,8 +126,13 @@ layui.use(['element','layer'], function(){
   var layer = layui.layer; 
   //监听导航点击
   element.on('nav', function(elem){
-    //console.log(elem)
-    layer.msg(elem.text());
+    var title = elem.text().trim();
+    if(title == '退出登录'){
+        window.location.href = "{$logoutUrl}";
+    }
+    if(title == '进入前台'){
+        window.location.href = "{$lmyimUrl}";
+    }
   });
 });
 </script>

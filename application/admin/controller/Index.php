@@ -8,8 +8,12 @@ class Index extends Base
     {
     	$homeUrl = url('admin/index/home');
         $userUrl = url('admin/user/index');
+        $logoutUrl = url('admin/admin/logout');
+        $lmyimUrl = url('index/index/index');
+        $this->assign('logoutUrl',$logoutUrl);
     	$this->assign('homeUrl',$homeUrl);
         $this->assign('userUrl',$userUrl);
+        $this->assign('lmyimUrl',$lmyimUrl);
     	return $this->fetch();
     }
 

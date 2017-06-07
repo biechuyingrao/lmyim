@@ -16,12 +16,17 @@ class Admin extends Base
     	return $this->fetch();
     }
 
+    public function logout(){
+        $user = Loader::model('User');
+        $user->logout();
+        $this->success("您已退出",url('admin/admin/login'),1);
+    }
     /**
      * 后台登录
      */
     public function login(){
         if(Session::has('name') && Session::get('admin_id') > 0){
-            $this->error("您已登录",U('Admin/Index/index'),1);
+            $this->error("您已登录",url('admin/index/index'),1);
         }
         if(IS_POST){
             $email = Request::instance()->param('email');
@@ -51,7 +56,7 @@ class Admin extends Base
      */
     public function reg(){
         if(Session::has('name') && Session::get('admin_id') > 0){
-            $this->error("您已登录",U('Admin/Index/index'),1);
+            $this->error("您已登录",url('admin/index/index'),1);
         }
         if(IS_POST){
             $email = Request::instance()->param('email');
