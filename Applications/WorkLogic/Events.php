@@ -20,7 +20,6 @@
 //declare(ticks=1);
 
 use \GatewayWorker\Lib\Gateway;
-
 /**
  * 主逻辑
  * 主要是处理 onConnect onMessage onClose 三个方法
@@ -59,20 +58,28 @@ class Events
         echo "client:{$_SERVER['REMOTE_ADDR']}:{$_SERVER['REMOTE_PORT']} gateway:{$_SERVER['GATEWAY_ADDR']}:{$_SERVER['GATEWAY_PORT']}  client_id:$client_id session:".json_encode($_SESSION)." onMessage:".$message."\n";
         
         // 客户端传递的是json数据
+
         $message_data = json_decode($message, true);
+        file_put_contents('logfile.log', date("Y-m-d H:i:s"). " " . var_export($message_data,true).PHP_EOL, FILE_APPEND | LOCK_EX);
         if(!$message_data)
         {
-            return ;
+            return GateWay::sendToAll(json_encode(['type' => 'chat','content' => '空数据']));
         }
-        $new_message = array(
-            'type'=>'say',
-            'from_client_id'=>$client_id, 
-            'from_client_name' =>$client_name,
-            'to_client_id'=>'7f0000010b5400000008',
-            'content'=>"<b>对你说: </b>".nl2br(htmlspecialchars($message_data['content'])),
-            'time'=>date('Y-m-d H:i:s'),
-        );
-        return Gateway::sendToClient($message_data['to_client_id'], json_encode($new_message));
+        // $new_message = array(
+        //     'type'=>'say', 
+        //     'from_client_id'=>$client_id,
+        //     'from_client_name' =>$client_name,
+        //     'to_client_id'=>'all',
+        //     'content'=>nl2br(htmlspecialchars($message_data['content'])),
+        //     'time'=>date('Y-m-d H:i:s'),
+        // );
+        $message_data['data']['mine']['mine'] = false;
+        $message_to = [
+            'type' => $message_data['type'],
+            'data' => $message_data['data']['mine']
+        ];
+        return GateWay::sendToAll(json_encode($message_to));
+        //return Gateway::sendToGroup($room_id ,json_encode($new_message));
         // 根据类型执行不同的业务
         switch($message_data['type'])
         {

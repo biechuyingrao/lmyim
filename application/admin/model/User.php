@@ -134,6 +134,7 @@ class User extends Model
         $auth = array(
             'uid'             => $user['id'],
             'username'        => $user['username'],
+            'email'			  => $user['email'],
             'last_login_time' => $user['last_login_time'],
         );
 

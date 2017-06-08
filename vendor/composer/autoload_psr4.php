@@ -26,4 +26,5 @@ return array(
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'Workerman\\' => array($vendorDir . '/workerman/workerman-for-win'),
     'GatewayWorker\\' => array($vendorDir . '/workerman/gateway-worker-for-win/src'),
+    'GatewayClient\\' => array($vendorDir . '/workerman/GatewayClient'),
 );

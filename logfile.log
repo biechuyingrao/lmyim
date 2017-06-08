@@ -1,0 +1,921 @@
+2017-06-08 16:20:06 XXX连接成功
+2017-06-08 16:20:12 XXX连接成功
+2017-06-08 16:20:39 [object Object]
+2017-06-08 16:21:56 NULL
+2017-06-08 16:21:59 NULL
+2017-06-08 16:22:08 NULL
+2017-06-08 16:26:55 NULL
+2017-06-08 16:27:06 NULL
+2017-06-08 16:27:18 NULL
+2017-06-08 16:27:24 NULL
+2017-06-08 16:27:32 NULL
+2017-06-08 16:27:42 NULL
+2017-06-08 16:35:35 NULL
+2017-06-08 16:35:42 NULL
+2017-06-08 16:37:57 NULL
+2017-06-08 16:38:07 NULL
+2017-06-08 16:38:29 NULL
+2017-06-08 16:38:37 NULL
+2017-06-08 16:43:09 NULL
+2017-06-08 16:43:15 NULL
+2017-06-08 16:43:26 NULL
+2017-06-08 16:43:56 NULL
+2017-06-08 17:01:59 NULL
+2017-06-08 17:02:08 NULL
+2017-06-08 17:03:34 NULL
+2017-06-08 17:05:37 NULL
+2017-06-08 17:05:44 array (
+  'mine' => 
+  array (
+    'username' => '大白菜',
+    'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+    'id' => 2,
+    'mine' => true,
+    'content' => 'ss',
+  ),
+  'to' => 
+  array (
+    'username' => 'liulong',
+    'id' => 3,
+    'avatar' => '',
+    'sign' => '测试一下',
+    'name' => 'liulong',
+    'type' => 'friend',
+  ),
+)
+2017-06-08 17:05:58 NULL
+2017-06-08 17:06:06 array (
+  'mine' => 
+  array (
+    'username' => 'liulong',
+    'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+    'id' => 3,
+    'mine' => true,
+    'content' => '搜索',
+  ),
+  'to' => 
+  array (
+    'username' => '大白菜',
+    'id' => 2,
+    'avatar' => '',
+    'sign' => '测试一下',
+    'name' => '大白菜',
+    'type' => 'friend',
+  ),
+)
+2017-06-08 17:07:02 NULL
+2017-06-08 17:07:23 NULL
+2017-06-08 17:07:29 array (
+  'mine' => 
+  array (
+    'username' => '大白菜',
+    'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+    'id' => 2,
+    'mine' => true,
+    'content' => 'ss',
+  ),
+  'to' => 
+  array (
+    'username' => 'liulong',
+    'id' => 3,
+    'avatar' => '',
+    'sign' => '测试一下',
+    'name' => 'liulong',
+    'type' => 'friend',
+  ),
+)
+2017-06-08 17:07:39 NULL
+2017-06-08 17:07:50 array (
+  'mine' => 
+  array (
+    'username' => 'liulong',
+    'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+    'id' => 3,
+    'mine' => true,
+    'content' => '搜索',
+  ),
+  'to' => 
+  array (
+    'username' => '大白菜',
+    'id' => 2,
+    'avatar' => '',
+    'sign' => '测试一下',
+    'name' => '大白菜',
+    'type' => 'friend',
+  ),
+)
+2017-06-08 17:10:08 NULL
+2017-06-08 17:10:13 NULL
+2017-06-08 17:10:27 array (
+  'mine' => 
+  array (
+    'username' => 'liulong',
+    'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+    'id' => 3,
+    'mine' => true,
+    'content' => '搜索',
+  ),
+  'to' => 
+  array (
+    'username' => '大白菜',
+    'id' => 2,
+    'avatar' => '',
+    'sign' => '测试一下',
+    'name' => '大白菜',
+    'type' => 'friend',
+  ),
+)
+2017-06-08 17:15:04 NULL
+2017-06-08 17:15:25 array (
+  'type' => 'chatMessage',
+  'date' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'ss',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'id' => 3,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => 'liulong',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:15:33 NULL
+2017-06-08 17:15:50 array (
+  'type' => 'chatMessage',
+  'date' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '到底',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'id' => 2,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => '大白菜',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:16:31 NULL
+2017-06-08 17:16:40 array (
+  'type' => 'chatMessage',
+  'date' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'ss',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'id' => 3,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => 'liulong',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:17:55 NULL
+2017-06-08 17:18:57 NULL
+2017-06-08 17:19:06 NULL
+2017-06-08 17:19:23 array (
+  'type' => 'chatMessage',
+  'date' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '搜索',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'id' => 2,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => '大白菜',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:19:27 array (
+  'type' => 'chatMessage',
+  'date' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '搜索',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'id' => 2,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => '大白菜',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:20:05 array (
+  'type' => 'chatMessage',
+  'date' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'ss',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'id' => 3,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => 'liulong',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:21:34 NULL
+2017-06-08 17:21:40 array (
+  'type' => 'chatMessage',
+  'date' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'ss',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'id' => 3,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => 'liulong',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:24:30 NULL
+2017-06-08 17:24:36 array (
+  'type' => 'chatMessage',
+  'date' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'ss',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'id' => 3,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => 'liulong',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:25:14 NULL
+2017-06-08 17:25:24 array (
+  'type' => 'chatMessage',
+  'date' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'ss',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'id' => 3,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => 'liulong',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:29:15 NULL
+2017-06-08 17:29:23 NULL
+2017-06-08 17:29:35 array (
+  'type' => 'chatMessage',
+  'date' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '搜索',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'id' => 2,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => '大白菜',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:31:25 NULL
+2017-06-08 17:31:32 NULL
+2017-06-08 17:31:38 array (
+  'type' => 'chatMessage',
+  'date' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '搜索',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'id' => 2,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => '大白菜',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:32:34 NULL
+2017-06-08 17:32:46 array (
+  'type' => 'chatMessage',
+  'date' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'ss ',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'id' => 3,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => 'liulong',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:33:12 NULL
+2017-06-08 17:33:16 NULL
+2017-06-08 17:33:21 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '搜索',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'id' => 2,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => '大白菜',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:33:44 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'xx',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'id' => 3,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => 'liulong',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:35:39 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '搜索',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'id' => 2,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => '大白菜',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:45:37 NULL
+2017-06-08 17:45:42 NULL
+2017-06-08 17:45:48 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '搜索',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'id' => 2,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => '大白菜',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:48:56 NULL
+2017-06-08 17:48:59 NULL
+2017-06-08 17:49:03 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '搜索',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'id' => 2,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => '大白菜',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:49:52 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'ss',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '搜索',
+      'timestamp' => 1496915343935,
+      'name' => 'liulong',
+    ),
+  ),
+)
+2017-06-08 17:51:56 NULL
+2017-06-08 17:52:00 NULL
+2017-06-08 17:52:39 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'ss',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'id' => 3,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => 'liulong',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:52:53 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '搜索',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => false,
+      'content' => 'ss',
+      'timestamp' => 1496915559644,
+      'name' => '大白菜',
+    ),
+  ),
+)
+2017-06-08 17:53:05 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'ss',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'id' => 3,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => 'liulong',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:53:24 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'dd ',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'id' => 3,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => 'liulong',
+      'type' => 'friend',
+    ),
+  ),
+)
+2017-06-08 17:53:41 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '到底',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => false,
+      'content' => '搜索',
+      'timestamp' => 1496915573969,
+      'name' => 'liulong',
+    ),
+  ),
+)
+2017-06-08 17:53:46 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '到底',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => false,
+      'content' => '搜索',
+      'timestamp' => 1496915573969,
+      'name' => 'liulong',
+    ),
+  ),
+)
+2017-06-08 17:53:49 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '到底',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => false,
+      'content' => '搜索',
+      'timestamp' => 1496915573969,
+      'name' => 'liulong',
+    ),
+  ),
+)
+2017-06-08 17:53:53 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '到底',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => false,
+      'content' => 'ss',
+      'timestamp' => 1496915559644,
+      'name' => '大白菜',
+    ),
+  ),
+)
+2017-06-08 17:54:07 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'dd',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => false,
+      'content' => '到底',
+      'timestamp' => 1496915621357,
+      'name' => 'liulong',
+    ),
+  ),
+)
+2017-06-08 17:54:16 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'dd',
+    ),
+    'to' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => false,
+      'content' => '到底',
+      'timestamp' => 1496915621357,
+      'name' => 'liulong',
+    ),
+  ),
+)
+2017-06-08 17:54:21 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'ddd',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => false,
+      'content' => 'ss',
+      'timestamp' => 1496915559647,
+      'name' => '大白菜',
+    ),
+  ),
+)
+2017-06-08 17:54:26 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'dd',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => false,
+      'content' => 'ss',
+      'timestamp' => 1496915559647,
+      'name' => '大白菜',
+    ),
+  ),
+)
+2017-06-08 17:56:52 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'dfdf',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => false,
+      'content' => 'ss',
+      'timestamp' => 1496915559647,
+      'name' => '大白菜',
+    ),
+  ),
+)
+2017-06-08 17:57:03 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => 'ddd',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => false,
+      'content' => 'ss',
+      'timestamp' => 1496915559647,
+      'name' => '大白菜',
+    ),
+  ),
+)
+2017-06-08 17:57:44 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'liulong',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => '方法',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => false,
+      'content' => 'ss',
+      'timestamp' => 1496915559644,
+      'name' => '大白菜',
+    ),
+  ),
+)

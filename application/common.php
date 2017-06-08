@@ -54,3 +54,19 @@ function is_login(){
         return session('user_auth_sign') == data_auth_sign($user) ? $user['uid'] : 0;
     }
 }
+
+function jsonReturn($code, $msg = '', $data = array()) {      
+    if(!is_numeric($code)) {
+        return '';
+    }
+
+    $result = array(
+        'code' => $code,
+        'msg' => $msg           
+    );
+
+    if(!empty($data)){
+        $result['data'] = $data;
+    }
+    return json_encode($result);
+}
