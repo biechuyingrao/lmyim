@@ -919,3 +919,53 @@
     ),
   ),
 )
+2017-06-12 14:20:40 NULL
+2017-06-12 14:22:35 NULL
+2017-06-12 14:22:46 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => 'sss',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => true,
+      'content' => 'ss ',
+    ),
+    'to' => 
+    array (
+      'username' => '大白菜',
+      'id' => 2,
+      'avatar' => '',
+      'sign' => '测试一下',
+      'name' => '大白菜',
+      'type' => 'friend',
+      'historyTime' => 1497248560309,
+    ),
+  ),
+)
+2017-06-12 14:23:02 array (
+  'type' => 'chatMessage',
+  'data' => 
+  array (
+    'mine' => 
+    array (
+      'username' => '大白菜',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 2,
+      'mine' => true,
+      'content' => '到底',
+    ),
+    'to' => 
+    array (
+      'username' => 'sss',
+      'avatar' => 'http://cdn.firstlinkapp.com/upload/2016_6/1465575923433_33812.jpg',
+      'id' => 3,
+      'mine' => false,
+      'content' => 'ss ',
+      'timestamp' => 1497248566567,
+      'name' => 'sss',
+    ),
+  ),
+)

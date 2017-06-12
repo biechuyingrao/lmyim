@@ -52,6 +52,20 @@ class Events
     */
    public static function onMessage($client_id, $message)
    {
+        //聊天
+        // $message_data = json_decode($message, true);
+        // if($message_data['type'] == 'chatMessage'){
+        //     $content = [
+        //         'content' => $message_data['content'],
+        //         'type' => $message_data['type'],
+        //     ];
+        //     if($message_data['send_to_all'] == '1'){
+        //         return GateWay::sendToAll(json_encode($message_to));
+        //     }
+        //     if(!empty($message_data['group_id'])){
+
+        //     }
+        // }
         // 向所有人发送 
         //Gateway::sendToAll("$client_id said $message\r\n");
       // debug
@@ -164,5 +178,26 @@ class Events
    {
        // 向所有人发送 
        GateWay::sendToAll("$client_id logout\r\n");
+   }
+
+   /**
+    * 业务逻辑
+    * @Author   liulong
+    * @DateTime 2017-06-12T17:11:28+0800
+    * @param    [type]                   $client_id    [description]
+    * @param    [type]                   $message_data [description]
+    * @return   [type]                                 [description]
+    */
+   public static function eventsLogic($client_id,$message){
+        $message_data = json_decode($message, true);
+        /*
+        $message_data = [
+            'type' => 'chatMessge',
+            'content' => $content
+            ''    
+        ]
+         */
+        file_put_contents('logfile.log', date("Y-m-d H:i:s"). " " . var_export($message_data,true).PHP_EOL, FILE_APPEND | LOCK_EX);
+        if()
    }
 }
