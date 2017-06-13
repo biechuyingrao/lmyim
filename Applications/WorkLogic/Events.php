@@ -186,6 +186,7 @@ class Events
     * @DateTime 2017-06-12T17:11:28+0800
     * @param    [type]                   $client_id    [description]
     * @param    [type]                   $message_data [description]
+    * #type
     * @return   [type]                                 [description]
     */
    public static function eventsLogic($client_id,$message){
@@ -193,8 +194,11 @@ class Events
         /*
         $message_data = [
             'type' => 'chatMessge',
-            'content' => $content
-            ''    
+            'content' => $content,
+            'send_type' => 'all|group|discuss|person',
+            'send_id' => $id,
+            'from_id' => $client_id,
+            ''   
         ]
          */
         file_put_contents('logfile.log', date("Y-m-d H:i:s"). " " . var_export($message_data,true).PHP_EOL, FILE_APPEND | LOCK_EX);

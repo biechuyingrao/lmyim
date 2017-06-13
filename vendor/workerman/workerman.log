@@ -54,3 +54,36 @@ Stack trace:
 #9 F:\www\lmyim\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
 #10 F:\www\lmyim\Applications\WorkLogic\start_gateway.php(63): Workerman\Worker::runAll()
 #11 {main}
+2017-06-13 21:48:25 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:26 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:26 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:27 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:27 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:28 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:28 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:29 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:29 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:30 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:30 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:31 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:31 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:32 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:32 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:33 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:33 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:34 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:34 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:35 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:35 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:36 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:36 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:37 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:37 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:38 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:38 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:39 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:39 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:40 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:40 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:41 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-13 21:48:41 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
