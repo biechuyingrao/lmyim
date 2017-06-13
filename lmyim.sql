@@ -45,3 +45,28 @@ CREATE TABLE `lmy_ucenter_member` (
 INSERT INTO `lmy_ucenter_member` VALUES ('2', '大白菜', 'liulong217', '335111164@qq.com', '', '1497247329', '127.0.0.1', '1', '1497247334', '127.0.0.1', '1497247329', '1497247334', '1');
 INSERT INTO `lmy_ucenter_member` VALUES ('3', 'sss', 'liulong217', '1549441501@qq.com', '', '1497248524', '127.0.0.1', '1', '1497248540', '127.0.0.1', '1497248524', '1497248540', '1');
 SET FOREIGN_KEY_CHECKS=1;
+
+-- ----------------------------
+-- Table structure for lmy_group
+-- ----------------------------
+DROP TABLE IF EXISTS `lmy_group`;
+CREATE TABLE `lmy_group` (
+  `id` INT(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '用户组ID',
+  `title` VARCHAR(20) NOT NULL COMMENT '用户组标题',
+  `notice` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '分组公告',
+  `logo` VARCHAR(255) NOT NULL DEFAULT '' COMMENT '分组logo',
+  `create_uid` INT(10) unsigned NOT NULL DEFAULT '0' COMMENT '创建者ID',
+  `create_time` INT(10) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
+  `update_time` INT(10) unsigned NOT NULL DEFAULT '0' COMMENT '修改时间',
+  `status`  tinyint(2) unsigned NOT NULL DEFAULT '0' COMMENT '状态',
+  `num` int(4) unsigned NOT NULL DEFAULT '0' COMMENT '用户数',
+  PRIMARY KEY (`id`) 
+) ENGINE=MYISAM DEFAULT CHARSET=UTF8 COMMENT='用户组表';
+
+-- ----------------------------
+-- Table structure for lmy_action_log
+-- ----------------------------
+DROP TABLE IF EXISTS `lmy_action_log`;
+CREATE TABLE `lmy_action_log` (
+
+);
