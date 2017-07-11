@@ -6,6 +6,7 @@ namespace app\admin\model;
 
 use think\Model;
 use think\Session;
+use think\Cache;
 
 class User extends Model
 {
@@ -138,6 +139,7 @@ class User extends Model
             'last_login_time' => $user['last_login_time'],
         );
 
+        Cache::set('user_auth', $auth);
         Session::set('user_auth', $auth);
         Session::set('user_auth_sign', data_auth_sign($auth));
 

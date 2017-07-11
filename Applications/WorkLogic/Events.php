@@ -20,6 +20,7 @@
 //declare(ticks=1);
 
 use \GatewayWorker\Lib\Gateway;
+use \think\Cache;
 /**
  * 主逻辑
  * 主要是处理 onConnect onMessage onClose 三个方法
@@ -35,13 +36,19 @@ class Events
      */
     public static function onConnect($client_id)
     {
+        //初始化缓存数据库
+        self::initCache();
+        $user_data = Cache::get('user_auth');
+        Gateway::bindUid($client_id, $user_data['uid']);
+        file_put_contents('logfile.log', date("Y-m-d H:i:s"). " 初始化数据 " . var_export($user_data,true).PHP_EOL, FILE_APPEND | LOCK_EX);
         // 向当前client_id发送数据 
         // Gateway::sendToClient($client_id, "Hello $client_id\r\n");
         // // 向所有人发送
         // Gateway::sendToAll("$client_id login\r\n");
         Gateway::sendToClient($client_id, json_encode(array(
             'type'      => 'init',
-            'client_id' => $client_id
+            'client_id' => $client_id,
+            'uid' => $user_data['uid']
         )));
     }
     
@@ -52,6 +59,7 @@ class Events
     */
    public static function onMessage($client_id, $message)
    {
+        self::eventsLogic($client_id,$message);
         //聊天
         // $message_data = json_decode($message, true);
         // if($message_data['type'] == 'chatMessage'){
@@ -93,81 +101,7 @@ class Events
             'data' => $message_data['data']['mine']
         ];
         return GateWay::sendToAll(json_encode($message_to));
-        //return Gateway::sendToGroup($room_id ,json_encode($new_message));
-        // 根据类型执行不同的业务
-        switch($message_data['type'])
-        {
-            // 客户端回应服务端的心跳
-            case 'pong':
-                return;
-            // 客户端登录 message格式: {type:login, name:xx, room_id:1} ，添加到客户端，广播给所有客户端xx进入聊天室
-            case 'login':
-                // 判断是否有房间号
-                if(!isset($message_data['room_id']))
-                {
-                    throw new \Exception("\$message_data['room_id'] not set. client_ip:{$_SERVER['REMOTE_ADDR']} \$message:$message");
-                }
-                
-                // 把房间号昵称放到session中
-                $room_id = $message_data['room_id'];
-                $client_name = htmlspecialchars($message_data['client_name']);
-                $_SESSION['room_id'] = $room_id;
-                $_SESSION['client_name'] = $client_name;
-              
-                // 获取房间内所有用户列表 
-                $clients_list = Gateway::getClientSessionsByGroup($room_id);
-                foreach($clients_list as $tmp_client_id=>$item)
-                {
-                    $clients_list[$tmp_client_id] = $item['client_name'];
-                }
-                $clients_list[$client_id] = $client_name;
-                
-                // 转播给当前房间的所有客户端，xx进入聊天室 message {type:login, client_id:xx, name:xx} 
-                $new_message = array('type'=>$message_data['type'], 'client_id'=>$client_id, 'client_name'=>htmlspecialchars($client_name), 'time'=>date('Y-m-d H:i:s'));
-                Gateway::sendToGroup($room_id, json_encode($new_message));
-                Gateway::joinGroup($client_id, $room_id);
-               
-                // 给当前用户发送用户列表 
-                $new_message['client_list'] = $clients_list;
-                Gateway::sendToCurrentClient(json_encode($new_message));
-                return;
-                
-            // 客户端发言 message: {type:say, to_client_id:xx, content:xx}
-            case 'say':
-                // 非法请求
-                if(!isset($_SESSION['room_id']))
-                {
-                    throw new \Exception("\$_SESSION['room_id'] not set. client_ip:{$_SERVER['REMOTE_ADDR']}");
-                }
-                $room_id = $_SESSION['room_id'];
-                $client_name = $_SESSION['client_name'];
-                
-                // 私聊
-                if($message_data['to_client_id'] != 'all')
-                {
-                    $new_message = array(
-                        'type'=>'say',
-                        'from_client_id'=>$client_id, 
-                        'from_client_name' =>$client_name,
-                        'to_client_id'=>$message_data['to_client_id'],
-                        'content'=>"<b>对你说: </b>".nl2br(htmlspecialchars($message_data['content'])),
-                        'time'=>date('Y-m-d H:i:s'),
-                    );
-                    Gateway::sendToClient($message_data['to_client_id'], json_encode($new_message));
-                    $new_message['content'] = "<b>你对".htmlspecialchars($message_data['to_client_name'])."说: </b>".nl2br(htmlspecialchars($message_data['content']));
-                    return Gateway::sendToCurrentClient(json_encode($new_message));
-                }
-                
-                $new_message = array(
-                    'type'=>'say', 
-                    'from_client_id'=>$client_id,
-                    'from_client_name' =>$client_name,
-                    'to_client_id'=>'all',
-                    'content'=>nl2br(htmlspecialchars($message_data['content'])),
-                    'time'=>date('Y-m-d H:i:s'),
-                );
-                return Gateway::sendToGroup($room_id ,json_encode($new_message));
-        }
+
    }
    
    /**
@@ -188,16 +122,62 @@ class Events
     * @param    [type]                   $message_data [description]
     * @return   [type]                                 [description]
     */
-   public static function eventsLogic($client_id,$message){
+    public static function eventsLogic($client_id,$message){
         $message_data = json_decode($message, true);
+        file_put_contents('logfile.log', date("Y-m-d H:i:s"). " " . var_export($message_data,true).PHP_EOL, FILE_APPEND | LOCK_EX);
         /*
         $message_data = [
-            'type' => 'chatMessge',
-            'content' => $content
-            ''    
+            'type' => 'chatMessge|sendMessge', 聊天消息 推送消息
+            'content' => ['text' => '','pic' => '','vodio' => ''],
+            'send_type' => all|group|dgroup|personal,
+            'send_id' => 0|gid|dgid|uid   
         ]
          */
-        file_put_contents('logfile.log', date("Y-m-d H:i:s"). " " . var_export($message_data,true).PHP_EOL, FILE_APPEND | LOCK_EX);
-        if()
-   }
+        if($message_data['type'] == 'chatMessage'){
+            $message_new = [
+                'type' => 'chatMessage',
+                'content' => $message_data['content'],
+                'send_type' => $message_data['send_type'],
+                'send_id' => $message_data['send_id'],
+                'from_id' => $_SESSION['uid'],
+                'from_username' => $_SESSION['username'],
+                'time' => time(),
+                'date' => date('Y-m-d H:i:s')
+            ];
+            switch ($message_new['send_type']) {
+                case 'all':
+                    return GateWay::sendToAll(json_encode($new_message));
+                    break;
+                case 'group':
+                    return Gateway::sendToAll($message_new['send_id'] ,json_encode($new_message));
+                    break;
+                case 'dgroup':
+                    return Gateway::sendToAll($message_new['send_id'] ,json_encode($new_message));
+                    break;
+                case 'personal':
+                    $to_client_id = Gateway::getClientIdByUid($message_new['send_id']);
+                    return Gateway::sendToClient($to_client_id, json_encode($new_message));
+                    break;
+                default:
+                    # code...
+                    break;
+            }
+        }
+    }
+
+    public static function initCache(){
+        define('IS_CLI', PHP_SAPI == 'cli' ? true : false);
+        $options = [
+            // 缓存类型为File
+            'type'  =>  'redis', 
+            // 缓存有效期为永久有效
+            'expire'=>  0, 
+            //缓存前缀
+            'prefix'=>  'lmy',
+            // 服务器地址
+            'host'       => '127.0.0.1',
+            'port'       => 6379
+        ];
+        Cache::connect($options);
+    }
 }

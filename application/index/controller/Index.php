@@ -4,7 +4,7 @@ use think\Controller;
 use think\Request;
 use think\Db;
 use think\Session;
-use GatewayClient\Gateway;
+use think\Cache;
 
 class Index extends Controller
 {
@@ -27,20 +27,7 @@ class Index extends Controller
     	return $this->fetch('index');
     }
 
-    /**
-     * [bindClientid workerman clientid与用户id绑定]
-     * @liulong
-     * @DateTime 2017-06-08T14:11:10+0800
-     * @return   [type]                   [description]
-     */
-    public function bindClientid(){
-    	$client_id = Request::instance()->param('client_id');
-    	// 设置GatewayWorker服务的Register服务ip和端口，请根据实际情况改成实际值
-		Gateway::$registerAddress = '127.0.0.1:1238';
-		$uid = Session::get('user_auth.uid');
-		// client_id与uid绑定
-		Gateway::bindUid($client_id, $uid);
-    }
+    
     /**
      * [sendMessage 向好友发送消息]
      * @Author   liulong

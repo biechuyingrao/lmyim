@@ -54,3 +54,71 @@ Stack trace:
 #9 F:\www\lmyim\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
 #10 F:\www\lmyim\Applications\WorkLogic\start_gateway.php(63): Workerman\Worker::runAll()
 #11 {main}
+2017-06-15 18:08:11 exception 'BadFunctionCallException' with message 'not support: redis' in F:\www\lmyim\thinkphp\library\think\cache\driver\Redis.php:44
+Stack trace:
+#0 F:\www\lmyim\thinkphp\library\think\Cache.php(51): think\cache\driver\Redis->__construct(Array)
+#1 F:\www\lmyim\Applications\WorkLogic\Events.php(253): think\Cache::connect(Array)
+#2 F:\www\lmyim\Applications\WorkLogic\Events.php(40): Events::initCache()
+#3 [internal function]: Events::onConnect('7f0000010b54000...')
+#4 F:\www\lmyim\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(364): call_user_func('Events::onConne...', '7f0000010b54000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 F:\www\lmyim\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #42)
+#8 F:\www\lmyim\vendor\workerman\workerman-for-win\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 F:\www\lmyim\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#10 F:\www\lmyim\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#11 F:\www\lmyim\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#12 F:\www\lmyim\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#13 F:\www\lmyim\Applications\WorkLogic\start_businessworker.php(39): Workerman\Worker::runAll()
+#14 {main}
+2017-06-15 18:14:56 exception 'BadFunctionCallException' with message 'not support: redis' in F:\www\lmyim\thinkphp\library\think\cache\driver\Redis.php:44
+Stack trace:
+#0 F:\www\lmyim\thinkphp\library\think\Cache.php(51): think\cache\driver\Redis->__construct(Array)
+#1 F:\www\lmyim\Applications\WorkLogic\Events.php(253): think\Cache::connect(Array)
+#2 F:\www\lmyim\Applications\WorkLogic\Events.php(40): Events::initCache()
+#3 [internal function]: Events::onConnect('7f0000010b54000...')
+#4 F:\www\lmyim\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(364): call_user_func('Events::onConne...', '7f0000010b54000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 F:\www\lmyim\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #42)
+#8 F:\www\lmyim\vendor\workerman\workerman-for-win\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 F:\www\lmyim\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#10 F:\www\lmyim\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#11 F:\www\lmyim\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#12 F:\www\lmyim\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#13 F:\www\lmyim\Applications\WorkLogic\start_businessworker.php(39): Workerman\Worker::runAll()
+#14 {main}
+2017-06-15 18:19:30 exception 'BadFunctionCallException' with message 'not support: redis' in F:\www\lmyim\thinkphp\library\think\cache\driver\Redis.php:44
+Stack trace:
+#0 F:\www\lmyim\thinkphp\library\think\Cache.php(51): think\cache\driver\Redis->__construct(Array)
+#1 F:\www\lmyim\Applications\WorkLogic\Events.php(253): think\Cache::connect(Array)
+#2 F:\www\lmyim\Applications\WorkLogic\Events.php(40): Events::initCache()
+#3 [internal function]: Events::onConnect('7f0000010b54000...')
+#4 F:\www\lmyim\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(364): call_user_func('Events::onConne...', '7f0000010b54000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 F:\www\lmyim\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #42)
+#8 F:\www\lmyim\vendor\workerman\workerman-for-win\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 F:\www\lmyim\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#10 F:\www\lmyim\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#11 F:\www\lmyim\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#12 F:\www\lmyim\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#13 F:\www\lmyim\Applications\WorkLogic\start_businessworker.php(39): Workerman\Worker::runAll()
+#14 {main}
+2017-06-15 18:24:34 exception 'BadFunctionCallException' with message 'not support: redis' in F:\www\lmyim\thinkphp\library\think\cache\driver\Redis.php:44
+Stack trace:
+#0 F:\www\lmyim\thinkphp\library\think\Cache.php(51): think\cache\driver\Redis->__construct(Array)
+#1 F:\www\lmyim\Applications\WorkLogic\Events.php(253): think\Cache::connect(Array)
+#2 F:\www\lmyim\Applications\WorkLogic\Events.php(40): Events::initCache()
+#3 [internal function]: Events::onConnect('7f0000010b54000...')
+#4 F:\www\lmyim\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(364): call_user_func('Events::onConne...', '7f0000010b54000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 F:\www\lmyim\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #42)
+#8 F:\www\lmyim\vendor\workerman\workerman-for-win\Events\Select.php(257): call_user_func_array(Array, Array)
+#9 F:\www\lmyim\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#10 F:\www\lmyim\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#11 F:\www\lmyim\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#12 F:\www\lmyim\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#13 F:\www\lmyim\Applications\WorkLogic\start_businessworker.php(39): Workerman\Worker::runAll()
+#14 {main}
